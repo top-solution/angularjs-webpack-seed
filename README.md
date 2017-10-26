@@ -9,7 +9,7 @@ It comes with preconfigured
 - [Nicolas Gallagher's Normalize.css](http://nicolasgallagher.com/about-normalize-css/)
 - `box-sizing: border-box` [as recommended by Paul Irish](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 
-## Pre-requisites
+## Pre-requisites
 
 Required:
 - [Node.js](https://nodejs.org/) with `npm`,
