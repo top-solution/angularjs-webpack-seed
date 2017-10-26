@@ -1,0 +1,25 @@
+hello {
+  @include container;
+
+  background: $brand-white;
+  text-align: center;
+
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+      height: 200px;
+      width: 200px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

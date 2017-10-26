@@ -1,0 +1,7 @@
+localhost:8001
+
+root dist
+
+rewrite {
+  to {path} {path}/ /index.html
+}

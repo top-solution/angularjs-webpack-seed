@@ -1,0 +1,15 @@
+@import 'node_modules/normalize-scss/sass/_normalize.scss';
+@import 'node_modules/box-sizing-border-box/index.scss';
+
+@import 'variables';
+@import 'mixins';
+
+body {
+  background-color: $brand-color-main;
+  color: $text-color-main;
+  font-family: $font-stack-main;
+  margin: 0;
+}
+
+@import 'app/hello/hello';
+@import 'app/footer/footer';
