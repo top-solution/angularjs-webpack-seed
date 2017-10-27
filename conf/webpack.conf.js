@@ -17,7 +17,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(dirSrc, 'index.html')
     }),
-    new ExtractTextPlugin('[name].[contenthash].css')
+    new ExtractTextPlugin('style.[hash].css')
   ],
   entry: {
     app: path.join(dirSrc, 'index'),
