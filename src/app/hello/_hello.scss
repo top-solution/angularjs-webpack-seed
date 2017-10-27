@@ -9,6 +9,11 @@ hello {
     flex-wrap: wrap;
     justify-content: center;
 
+    font: {
+      family: sans-serif;
+      size: 18px;
+    }
+
     a {
       align-items: center;
       background-position: center center;

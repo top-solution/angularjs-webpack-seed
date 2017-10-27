@@ -1,9 +1,10 @@
 const webpack = require('webpack');
 const path = require('path');
+const autoprefixer = require('autoprefixer');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const autoprefixer = require('autoprefixer');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 const dirSrc = path.join(__dirname, '../src');
 const dirNodeModules = path.join(__dirname, '../node_modules');
@@ -17,7 +18,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(dirSrc, 'index.html')
     }),
-    new ExtractTextPlugin('style.[hash].css')
+    new ExtractTextPlugin('style.[hash].css'),
+    new StyleLintPlugin()
   ],
   entry: {
     app: path.join(dirSrc, 'index'),
