@@ -41,6 +41,7 @@
     "dev": "NODE_ENV=dev webpack-dev-server --progress --config conf/webpack.conf.dev.js",
     "build": "NODE_ENV=prod webpack -p --progress --config conf/webpack.conf.build.js"
   },
+  "browserslist": ["last 2 versions", "ie >= 10"],
   "eslintConfig": {
     "root": true,
     "env": {
