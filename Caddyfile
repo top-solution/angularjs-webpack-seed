@@ -1,4 +1,4 @@
-localhost:8001
+0.0.0.0:8001
 
 root dist
 
