@@ -9,6 +9,13 @@ It comes with preconfigured
 - [Nicolas Gallagher's Normalize.css](http://nicolasgallagher.com/about-normalize-css/)
 - `box-sizing: border-box` [as recommended by Paul Irish](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 
+Supported browsers (in [browserlist](https://github.com/ai/browserslist) format) are:
+
+```
+last 2 versions
+ie >= 10
+```
+
 ## Pre-requisites
 
 Required:
@@ -53,6 +60,10 @@ $ caddy
 ```
 The build will be available at http://localhost:8001/.
 
+## Known issues
+
+- Internet Explorer 10 is not supported in development mode
+
 ## Contribute
 
-Want to help? Feel free to open any pull request, but please submit only ESLint-warnings-free versions to review.
+Want to help? Feel free to open any issue or pull request, but please submit only warnings-free versions to review.
