@@ -30,5 +30,4 @@ module.exports = Object.assign(webpackConfig, {
       }
     })
   ])
-
 });

@@ -8,11 +8,21 @@ const autoprefixer = require('autoprefixer');
 const dirSrc = path.join(__dirname, '../src');
 const dirNodeModules = path.join(__dirname, '../node_modules');
 
-const pkg = require(path.join(__dirname, '../package.json'));
-
 const IS_DEV = (process.env.NODE_ENV === 'dev');
 
 module.exports = {
+  plugins: [
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
+    new HtmlWebpackPlugin({
+      template: path.join(dirSrc, 'index.html')
+    }),
+    new ExtractTextPlugin('[name].[contenthash].css')
+  ],
+  entry: {
+    app: path.join(dirSrc, 'index'),
+    vendor: ['babel-polyfill', 'angular', '@uirouter/angularjs']
+  },
   module: {
     rules: [
       {
@@ -72,17 +82,5 @@ module.exports = {
         }
       }
     ]
-  },
-  plugins: [
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.NoEmitOnErrorsPlugin(),
-    new HtmlWebpackPlugin({
-      template: path.join(dirSrc, 'index.html')
-    }),
-    new ExtractTextPlugin('[name].[contenthash].css')
-  ],
-  entry: {
-    app: path.join(dirSrc, 'index'),
-    vendor: Object.keys(pkg.dependencies)
   }
 };
