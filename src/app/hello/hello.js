@@ -1,6 +1,7 @@
 export const hello = {
   template: require('./hello.html'),
-  controller() {
+  /** @ngInject */
+  controller($log) {
     this.tools = [
       {name: 'AngularJS', href: 'https://angularjs.org', image: 'https://raw.githubusercontent.com/angular/angular.js/master/images/logo/AngularJS.exports/AngularJS-medium.png'},
       {name: 'webpack', href: 'https://webpack.js.org/', image: 'https://raw.githubusercontent.com/webpack/media/master/logo/icon.png'},
@@ -10,5 +11,10 @@ export const hello = {
       {name: 'Angular UI Router', href: 'https://ui-router.github.io/', image: 'https://ui-router.github.io/images/logos/ui-router.svg'},
       {name: 'Sass', href: 'http://sass-lang.com/', image: 'http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg'}
     ];
+
+    $log.info('We\'re using these tools:');
+    this.tools.forEach(tool => {
+      $log.info(` - ${tool.name}`);
+    });
   }
 };
