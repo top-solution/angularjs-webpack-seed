@@ -1,7 +1,7 @@
 # AngularJS + webpack seed project
 
 An [AngularJS](https://angularjs.org/) + [webpack](https://webpack.github.io/) seed project, supporting [ES2015+](https://devhints.io/es6) syntax through
-[Babel](https://babeljs.io/) compiler; [ESLint](https://eslint.org/) will assist you writing beautiful code.
+[Babel](https://babeljs.io/) compiler; [ESLint](https://eslint.org/) and [stylelint](https://stylelint.io/) will assist you writing beautiful code.
 
 It comes with preconfigured
 - [UI Router](https://ui-router.github.io/ng1/) 1.0.x
