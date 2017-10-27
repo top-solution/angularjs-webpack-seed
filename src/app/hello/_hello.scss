@@ -11,15 +11,14 @@ hello {
 
     a {
       align-items: center;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
       display: flex;
       justify-content: center;
       margin: 10px;
       height: 200px;
       width: 200px;
-    }
-
-    img {
-      max-width: 100%;
     }
   }
 }

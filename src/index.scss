@@ -11,5 +11,16 @@ body {
   margin: 0;
 }
 
+a {
+  img {
+    border: 0;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 @import 'app/hello/hello';
 @import 'app/footer/footer';
