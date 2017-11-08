@@ -5,6 +5,7 @@ const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const dirSrc = path.join(__dirname, '../src');
 const dirNodeModules = path.join(__dirname, '../node_modules');
@@ -19,7 +20,25 @@ module.exports = {
       template: path.join(dirSrc, 'index.html')
     }),
     new ExtractTextPlugin('style.[hash].css'),
-    new StyleLintPlugin()
+    new StyleLintPlugin(),
+    new FaviconsWebpackPlugin({
+      logo: path.join(dirSrc, 'images/favicon.png'),
+      background: '#fff',
+      theme_color: '#312783', // eslint-disable-line camelcase
+      title: 'AngularJS Webpack seed project',
+      icons: {
+        android: true,
+        appleIcon: true,
+        appleStartup: true,
+        coast: true,
+        favicons: true,
+        firefox: true,
+        opengraph: true,
+        twitter: true,
+        yandex: true,
+        windows: true
+      }
+    })
   ],
   entry: {
     app: path.join(dirSrc, 'index'),
