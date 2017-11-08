@@ -1,6 +1,6 @@
 {
   "name": "angularjs-webpack-seed",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An AngularJS + Webpack seed project, using ES2015+ with Babel, Webpack 3, ESLint, SASS (scss) and UI Router",
   "author": "Gabriele Destefanis <g.destefanis@topsolution.it>",
   "license": "ISC",
