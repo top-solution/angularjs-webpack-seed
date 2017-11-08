@@ -3,10 +3,9 @@
 <p>Congratulations, you have correctly installed and run this seed project based on:</p>
 
 <div class="tools">
-  <a ng-repeat="tool in $ctrl.tools"
-     ng-href="{{::tool.href}}"
-     title="{{::tool.name}}"
-     style="background-image: url({{::tool.image}})"
-     target="_blank">
-  </a>
+  <div class="tool"
+       style="background-image: url({{::tool.image}})"
+       ng-repeat="tool in $ctrl.tools"
+       ng-click="$ctrl.open(tool)">
+  </div>
 </div>

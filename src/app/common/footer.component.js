@@ -1,3 +1,3 @@
-export const footer = {
+export default {
   template: require('./footer.html')
 };

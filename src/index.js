@@ -1,13 +1,17 @@
-import {hello} from './app/hello/hello';
-import {footer} from './app/footer/footer';
+import ApiModule from './app/api/module';
+import CommonModule from './app/common/module';
+import HelloModule from './app/hello/module';
 import routesConfig from './routes';
 
 import './index.scss';
 
-export const app = 'app';
+export const AppModule = 'app';
 
 angular
-  .module(app, ['ui.router'])
-  .config(routesConfig)
-  .component('footer', footer)
-  .component('hello', hello);
+  .module(AppModule, [
+    'ui.router',
+    ApiModule,
+    CommonModule,
+    HelloModule
+  ])
+  .config(routesConfig);
