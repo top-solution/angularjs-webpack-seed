@@ -1,7 +1,7 @@
 # AngularJS + webpack seed project
 
 An [AngularJS](https://angularjs.org/) + [webpack](https://webpack.github.io/) seed project, supporting [ES2015+](https://devhints.io/es6) syntax through
-[Babel](https://babeljs.io/) compiler; [ESLint](https://eslint.org/) and [stylelint](https://stylelint.io/) will assist you writing beautiful code.
+[Babel](https://babeljs.io/) compiler; [ESLint](https://eslint.org/) and [stylelint](https://stylelint.io/) will assist you writing beautiful code. To add jQuery, refer to the section _Use jQuery with angular.element_.
 
 It comes with preconfigured
 - [UI Router](https://ui-router.github.io/ng1/) 1.0.x
@@ -59,6 +59,28 @@ If you want to see the build in a browser run
 $ caddy
 ```
 The build will be available at http://localhost:8001/.
+
+## Use jQuery with angular.element
+
+You may want to supercharge `angular.element` with `jQuery` selector powers, then you have to
+```shell
+$ yarn add jquery
+```
+then drop the WebpackProvide plugin in `conf/webpack.conf.js`:
+
+```javascript
+[...]
+module.exports = {
+  plugins: [
+    new webpack.ProvidePlugin({
+      'window.jQuery': 'jquery',
+      jQuery: 'jquery',
+      $: 'jquery'
+    }),
+[...]
+```
+
+Refer to [Johnny Reilly](https://blog.johnnyreilly.com/2016/05/the-mysterious-case-of-webpack-angular-and-jquery.html) for an explaination.
 
 ## Known issues
 
