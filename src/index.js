@@ -1,6 +1,7 @@
 import ApiModule from './app/api/module';
 import CommonModule from './app/common/module';
 import HelloModule from './app/hello/module';
+import NewsModule from './app/news/module';
 import routesConfig from './routes';
 
 import './index.scss';
@@ -12,6 +13,7 @@ angular
     'ui.router',
     ApiModule,
     CommonModule,
-    HelloModule
+    HelloModule,
+    NewsModule
   ])
   .config(routesConfig);

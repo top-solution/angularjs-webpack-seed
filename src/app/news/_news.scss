@@ -1,0 +1,13 @@
+news {
+  @include container;
+
+  background: $brand-white;
+
+  article {
+    margin-bottom: 1em;
+
+    a {
+      display: block;
+    }
+  }
+}
