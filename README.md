@@ -1,3 +1,10 @@
+# WARNING #
+
+This repository is way old and unmaintained, we're keeping it there just for reference.
+
+If you're going to develop a new JavaScript single page application, consider using a
+newer framework like [React](https://reactjs.org), [Vue.js](https://reactjs.org) or the [modern Angular](https://angular.io).
+
 # AngularJS + webpack seed project
 
 An [AngularJS](https://angularjs.org/) + [webpack](https://webpack.github.io/) seed project, supporting [ES2015+](https://devhints.io/es6) syntax through
