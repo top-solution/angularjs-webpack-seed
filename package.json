@@ -4,6 +4,10 @@
   "description": "An AngularJS + Webpack seed project, using ES2015+ with Babel, Webpack 3, ESLint, SASS (scss) and UI Router",
   "author": "Gabriele Destefanis <g.destefanis@topsolution.it>",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/top-solution/angularjs-webpack-seed"
+  },
   "dependencies": {
     "@uirouter/angularjs": "^1.0.10",
     "angular": "^1.6.6",
@@ -26,7 +30,7 @@
     "eslint-plugin-angular": "^3.1.1",
     "eslint-plugin-babel": "^4.1.2",
     "extract-text-webpack-plugin": "^3.0.2",
-    "favicons-webpack-plugin": "^0.0.7",
+    "favicons-webpack-plugin": "0.0.9",
     "file-loader": "^1.1.5",
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
